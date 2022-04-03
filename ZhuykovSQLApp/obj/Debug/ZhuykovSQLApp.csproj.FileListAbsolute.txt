@@ -1,0 +1,11 @@
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\obj\Debug\ZhuykovSQLApp.csproj.AssemblyReference.cache
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\obj\Debug\ZhuykovSQLApp.csproj.SuggestedBindingRedirects.cache
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\obj\Debug\ZhuykovSQLApp.LoginForm.resources
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\obj\Debug\ZhuykovSQLApp.Properties.Resources.resources
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\obj\Debug\ZhuykovSQLApp.csproj.GenerateResource.cache
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\obj\Debug\ZhuykovSQLApp.csproj.CoreCompileInputs.cache
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\ZhuykovSQLApp.exe.config
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\ZhuykovSQLApp.exe
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\ZhuykovSQLApp.pdb
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\obj\Debug\ZhuykovSQLApp.exe
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\obj\Debug\ZhuykovSQLApp.pdb
