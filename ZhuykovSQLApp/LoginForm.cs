@@ -12,6 +12,8 @@ namespace ZhuykovSQLApp
 {
     public partial class LoginForm : Form
     {
+
+        DB dateBase = new DB();
         public LoginForm()
         {
             InitializeComponent();
@@ -90,6 +92,13 @@ namespace ZhuykovSQLApp
                 passField.UseSystemPasswordChar = true;
                 pictureBox3.Visible = true;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            /* 
+                Form2 f2 = new Form2();
+             */
         }
     }
 }

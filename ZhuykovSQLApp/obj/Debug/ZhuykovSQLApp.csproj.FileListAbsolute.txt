@@ -9,3 +9,16 @@ D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\ZhuykovSQLApp.exe
 D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\ZhuykovSQLApp.pdb
 D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\obj\Debug\ZhuykovSQLApp.exe
 D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\obj\Debug\ZhuykovSQLApp.pdb
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\MySql.Data.dll
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\Google.Protobuf.dll
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\ZstdNet.dll
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\BouncyCastle.Crypto.dll
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\Ubiety.Dns.Core.dll
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\System.Memory.dll
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\System.Buffers.dll
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\K4os.Compression.LZ4.dll
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\K4os.Hash.xxHash.dll
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\MySql.Data.xml
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\obj\Debug\ZhuykovSQLApp.exe.config
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\obj\Debug\ZhuykovSQLApp.csproj.CopyComplete
