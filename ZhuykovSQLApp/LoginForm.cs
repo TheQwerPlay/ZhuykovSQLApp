@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +14,7 @@ namespace ZhuykovSQLApp
     public partial class LoginForm : Form
     {
 
-        DB dateBase = new DB();
+        DateBase db;
         public LoginForm()
         {
             InitializeComponent();
@@ -94,11 +95,26 @@ namespace ZhuykovSQLApp
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonLogin_Click(object sender, EventArgs e)
         {
-            /* 
-                Form2 f2 = new Form2();
-             */
+            string loginUser = loginField.Text;
+            string passUser = passField.Text;
+
+            db = new DateBase();
+            DataTable table = new DataTable();
+            MySqlDataAdapter adapter = new MySqlDataAdapter();
+
+            MySqlCommand сommand = new MySqlCommand("SELECT * FROM `users` Where `login` = @uL AND `pass` = @uP", db.getConnection());
+            сommand.Parameters.Add("@uL", MySqlDbType.VarChar).Value = loginUser;
+            сommand.Parameters.Add("@uP", MySqlDbType.VarChar).Value = passUser;
+
+            adapter.SelectCommand = сommand;
+            adapter.Fill(table);
+
+            if (table.Rows.Count > 0)
+                MessageBox.Show("YES");
+            else 
+                MessageBox.Show("NO");
         }
     }
 }

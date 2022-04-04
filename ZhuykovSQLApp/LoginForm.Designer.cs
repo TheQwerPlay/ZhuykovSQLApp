@@ -31,7 +31,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.passField = new System.Windows.Forms.TextBox();
             this.loginField = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonLogin = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -79,18 +79,18 @@
             this.loginField.MouseEnter += new System.EventHandler(this.loginField_MouseEnter);
             this.loginField.MouseLeave += new System.EventHandler(this.loginField_MouseLeave);
             // 
-            // button1
+            // buttonLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.Orange;
-            this.button1.Font = new System.Drawing.Font("GOST type A", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(250, 300);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(286, 45);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Войти";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonLogin.BackColor = System.Drawing.Color.Orange;
+            this.buttonLogin.Font = new System.Drawing.Font("GOST type A", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonLogin.ForeColor = System.Drawing.Color.White;
+            this.buttonLogin.Location = new System.Drawing.Point(250, 300);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(286, 45);
+            this.buttonLogin.TabIndex = 7;
+            this.buttonLogin.Text = "Войти";
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // pictureBox4
             // 
@@ -147,7 +147,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.passField);
             this.Controls.Add(this.loginField);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonLogin);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(800, 600);
             this.MinimumSize = new System.Drawing.Size(800, 600);
@@ -169,7 +169,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox passField;
         private System.Windows.Forms.TextBox loginField;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonLogin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;

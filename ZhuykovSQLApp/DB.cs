@@ -8,9 +8,10 @@ using System.Data.SqlClient;
 
 namespace ZhuykovSQLApp
 {
-    internal class DB
+    internal class DateBase
     {
-        SqlConnection connection = new SqlConnection(@"Data Source = DESKTOP-R7BKC4T\SQLEXPRESS; Initial Catalog = CandyStore; Integrated Security = True");
+        MySqlConnection connection = new MySqlConnection("server = localhost; port = 3306; username = root; password = root; database = CandyStore");
+        //SqlConnection connection = new SqlConnection(@"Data Source = DESKTOP-R7BKC4T\SQLEXPRESS; Initial Catalog = CandyStore; Integrated Security = True");
 
         public void openConnection()
         {
@@ -28,7 +29,7 @@ namespace ZhuykovSQLApp
             }
         }
 
-        public SqlConnection getConnection()
+        public MySqlConnection getConnection()
         {
             return connection;
         }
