@@ -22,3 +22,4 @@ D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\K4os.Hash.xxHash.dll
 D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\bin\Debug\MySql.Data.xml
 D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\obj\Debug\ZhuykovSQLApp.exe.config
 D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\obj\Debug\ZhuykovSQLApp.csproj.CopyComplete
+D:\project\c#\ZhuykovSQLApp\ZhuykovSQLApp\obj\Debug\ZhuykovSQLApp.RegisterForm.resources

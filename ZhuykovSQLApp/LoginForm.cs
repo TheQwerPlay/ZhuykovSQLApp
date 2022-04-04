@@ -116,5 +116,11 @@ namespace ZhuykovSQLApp
             else 
                 MessageBox.Show("NO");
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            RegisterForm regForm = new RegisterForm();
+            regForm.ShowDialog();
+        }
     }
 }
