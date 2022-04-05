@@ -6,15 +6,14 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ZhuykovSQLApp
 {
     public partial class LoginForm : Form
-    {
-
-        DateBase db;
+    {        
         public LoginForm()
         {
             InitializeComponent();
@@ -67,12 +66,12 @@ namespace ZhuykovSQLApp
 
         private void label3_MouseEnter(object sender, EventArgs e)
         {
-            label3.ForeColor = Color.White;
+            registerLabel.ForeColor = Color.White;
         }
 
         private void label3_MouseLeave(object sender, EventArgs e)
         {
-            label3.ForeColor = Color.Gray;
+            registerLabel.ForeColor = Color.Gray;
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -100,25 +99,41 @@ namespace ZhuykovSQLApp
             string loginUser = loginField.Text;
             string passUser = passField.Text;
 
-            db = new DateBase();
+            DateBase db = new DateBase();
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
 
             MySqlCommand сommand = new MySqlCommand("SELECT * FROM `users` Where `login` = @uL AND `pass` = @uP", db.getConnection());
+
             сommand.Parameters.Add("@uL", MySqlDbType.VarChar).Value = loginUser;
             сommand.Parameters.Add("@uP", MySqlDbType.VarChar).Value = passUser;
 
             adapter.SelectCommand = сommand;
             adapter.Fill(table);
 
+            MySqlCommand сommand1 = new MySqlCommand("SELECT `name` FROM `users` WHERE `login` = @uL", db.getConnection());
+
+            сommand1.Parameters.Add("@uL", MySqlDbType.VarChar).Value = loginUser;
+            string userName = "";
+                       
             if (table.Rows.Count > 0)
-                MessageBox.Show("YES");
-            else 
-                MessageBox.Show("NO");
+            {
+                db.openConnection();
+                userName = сommand1.ExecuteScalar().ToString();
+                db.closeConnection();
+                MessageBox.Show("Добро пожаловать, " + userName);
+                new Thread(() => { Application.Run(new MainForm()); }).Start();
+                this.Close();
+            }
+            else
+            {
+                errorLabel.Visible = true;
+                errorLabel.ForeColor = Color.Red;
+            }            
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
+        private void registerLabel_Click(object sender, EventArgs e)
+        {            
             RegisterForm regForm = new RegisterForm();
             regForm.ShowDialog();
         }

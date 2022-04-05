@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3 = new System.Windows.Forms.Label();
+            this.registerLabel = new System.Windows.Forms.Label();
             this.passField = new System.Windows.Forms.TextBox();
             this.loginField = new System.Windows.Forms.TextBox();
             this.buttonLogin = new System.Windows.Forms.Button();
@@ -36,25 +36,26 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.errorLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label3
+            // registerLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("GOST type A", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(300, 350);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 25);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Ещё нет аккаунта?";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            this.label3.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
-            this.label3.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
+            this.registerLabel.AutoSize = true;
+            this.registerLabel.Font = new System.Drawing.Font("GOST type A", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.registerLabel.ForeColor = System.Drawing.Color.Gray;
+            this.registerLabel.Location = new System.Drawing.Point(300, 350);
+            this.registerLabel.Name = "registerLabel";
+            this.registerLabel.Size = new System.Drawing.Size(192, 25);
+            this.registerLabel.TabIndex = 10;
+            this.registerLabel.Text = "Ещё нет аккаунта?";
+            this.registerLabel.Click += new System.EventHandler(this.registerLabel_Click);
+            this.registerLabel.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            this.registerLabel.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
             // 
             // passField
             // 
@@ -135,6 +136,19 @@
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
+            // errorLabel
+            // 
+            this.errorLabel.Font = new System.Drawing.Font("GOST type A", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.errorLabel.ForeColor = System.Drawing.Color.Gray;
+            this.errorLabel.Location = new System.Drawing.Point(250, 147);
+            this.errorLabel.Name = "errorLabel";
+            this.errorLabel.Size = new System.Drawing.Size(286, 80);
+            this.errorLabel.TabIndex = 10;
+            this.errorLabel.Text = "Неверный адрес электронной почты или пароль.";
+            this.errorLabel.Visible = false;
+            this.errorLabel.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            this.errorLabel.MouseLeave += new System.EventHandler(this.label3_MouseLeave);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,10 +159,11 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.registerLabel);
             this.Controls.Add(this.passField);
             this.Controls.Add(this.loginField);
             this.Controls.Add(this.buttonLogin);
+            this.Controls.Add(this.errorLabel);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(800, 600);
             this.MinimumSize = new System.Drawing.Size(800, 600);
@@ -167,7 +182,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label registerLabel;
         private System.Windows.Forms.TextBox passField;
         private System.Windows.Forms.TextBox loginField;
         private System.Windows.Forms.Button buttonLogin;
@@ -175,5 +190,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label errorLabel;
     }
 }
