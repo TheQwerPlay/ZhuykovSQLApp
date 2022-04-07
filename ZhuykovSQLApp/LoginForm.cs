@@ -96,6 +96,7 @@ namespace ZhuykovSQLApp
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
+            errorLabel.Visible = false;
             string loginUser = loginField.Text;
             string passUser = passField.Text;
 
@@ -121,9 +122,9 @@ namespace ZhuykovSQLApp
                 db.openConnection();
                 userName = сommand1.ExecuteScalar().ToString();
                 db.closeConnection();
-                MessageBox.Show("Добро пожаловать, " + userName);
+                MessageBox.Show($"Добро пожаловать, {userName}", "Приветственное окно!");
                 new Thread(() => { Application.Run(new MainForm()); }).Start();
-                this.Close();
+                Close();
             }
             else
             {

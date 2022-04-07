@@ -20,7 +20,8 @@ namespace ZhuykovSQLApp
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (userNameField.Text.Length > 0 && userSurnameField.Text.Length > 0 && loginField.Text.Length > 0 && passField.Text.Length > 0 && confirmPassField.Text.Length > 0 && (passField.Text == confirmPassField.Text))
+            if (userNameField.Text.Length > 0 && userSurnameField.Text.Length > 0 && loginField.Text.Length > 0 
+                && passField.Text.Length > 0 && confirmPassField.Text.Length > 0 && (passField.Text == confirmPassField.Text))
             {
                 ButtonRegister.Enabled = true;
                 label5.ForeColor = Color.Green;
@@ -41,7 +42,8 @@ namespace ZhuykovSQLApp
                 return;
             }    
             DateBase db = new DateBase();
-            MySqlCommand command = new MySqlCommand("INSERT INTO `users` (`login`, `pass`, `name`, `surname`) VALUES (@login, @pass, @name, @surname)", db.getConnection());
+            MySqlCommand command = new MySqlCommand("INSERT INTO `users` (`login`, `pass`, `name`, `surname`) " +
+                "VALUES (@login, @pass, @name, @surname)", db.getConnection());
             command.Parameters.Add("@login", MySqlDbType.VarChar).Value = loginField.Text;
             command.Parameters.Add("@pass", MySqlDbType.VarChar).Value = passField.Text;
             command.Parameters.Add("@name", MySqlDbType.VarChar).Value = userNameField.Text;
@@ -53,7 +55,6 @@ namespace ZhuykovSQLApp
             {
                 MessageBox.Show("Аккаунт был создан");
             }
-            else MessageBox.Show("Аккаунт не был создан");
 
             db.closeConnection();
             Close();
